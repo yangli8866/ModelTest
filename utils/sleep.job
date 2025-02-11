@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH -J sleep
+#SBATCH -p debug
+#SBATCH --time=1
+#SBATCH -N 2
+#SBATCH -n 2
+#SBATCH -o logs/%j.sleep
+#SBATCH -e logs/%j.sleep
+echo ${SLURM_JOB_NODELIST}
+echo run.sh start on $(date)
+sleep 50
+echo run.sh end on $(date)

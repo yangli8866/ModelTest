@@ -1,0 +1,16 @@
+{
+  "path": "/v1/subscriptions/{subscription_name}/resourceGroups/{resource_group_name}/zones/{zone}/telemetryStations/{telemetry_station_name}/usergroups",
+  "cases": {
+    "telemetry_get_rules_templates_all_params_is_true": {
+      "params": {
+        "subscription_name": "224bae0c-a98f-41f5-b5d3-9f54aa98455f",
+        "resource_group_name": "default",
+        "zone": "cn-sh-01z",
+        "telemetry_station_name": "ts-user-1a3024da-3003-471a-afeb-228fd8716c6c"
+      },
+      "check": {
+        "code": 200
+      }
+    }
+  }
+}
